@@ -213,3 +213,4 @@ if __name__ == "__main__":
     elif args.source == "custom":
         items = generate_synthetic_catalog(num_skus=args.num_skus, output_path=args.output)
         print(f"Custom catalog processed -> {args.output}")
+

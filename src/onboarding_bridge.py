@@ -152,3 +152,4 @@ class OnboardingBridge:
         """Applies decision rules across a batch of SKU predictions."""
         metadata_list = metadata_list or [{}] * len(scores_list)
         return [self.decide(s, m) for s, m in zip(scores_list, metadata_list)]
+

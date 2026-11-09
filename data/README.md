@@ -90,3 +90,4 @@ from src.data import generate_synthetic_catalog
 catalog = generate_synthetic_catalog(num_skus=120, output_path="data/processed/catalog.jsonl")
 print(f"Generated {len(catalog)} synthetic catalog entries across 6 quick-commerce categories.")
 ```
+

@@ -171,3 +171,4 @@ class CLIPCatalogModel:
         image_embeds = l2_normalize(image_embeds, axis=-1)
         text_embeds = l2_normalize(text_embeds, axis=-1)
         return np.dot(image_embeds, text_embeds.T)
+

@@ -161,3 +161,4 @@ def create_vector_index(dimension: int, index_type: str = "IndexFlatIP"):
             return faiss.IndexFlatIP(dimension)
     except ImportError:
         return NumpyIndexFlatIP(dimension)
+

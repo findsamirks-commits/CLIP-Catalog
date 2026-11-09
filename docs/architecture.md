@@ -152,3 +152,4 @@ flowchart TD
 ```
 
 By introducing **CLIP-Catalog**, the onboarding latency of newly introduced FMCG SKUs drops from 3–5 business days down to seconds, enabling instantaneous downstream activation across all autonomous retail mesh agents.
+

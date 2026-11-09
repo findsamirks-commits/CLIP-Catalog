@@ -149,3 +149,4 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     evaluate_catalog_model(model_path=args.model_path, catalog_path=args.catalog)
+

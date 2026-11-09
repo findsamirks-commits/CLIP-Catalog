@@ -129,3 +129,4 @@ class CLIPRetriever:
 
         image_embedding = self.model.encode_image(query_image)
         return self.index.search(image_embedding, top_k=top_k)
+

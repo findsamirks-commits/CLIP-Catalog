@@ -289,3 +289,4 @@ MIT — see [LICENSE](LICENSE).
 ---
 
 **Built by [Samir Sandhwar](https://github.com/findsamirks-commits)** — Category Head at Milkbasket, IIT Madras Agentic AI alumnus. The vision-language zero-shot complement to [`Multimodal-SKU-Classifier`](https://github.com/findsamirks-commits/Multimodal-SKU-Classifier); part of the [Autonomous Retail AI Mesh](https://github.com/findsamirks-commits).
+

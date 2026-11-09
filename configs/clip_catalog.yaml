@@ -28,3 +28,4 @@ onboarding:
   review_queue_confidence: 0.40
   min_top1_margin: 0.15
   forbidden_categories: []
+
