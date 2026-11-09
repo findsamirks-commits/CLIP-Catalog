@@ -1,0 +1,30 @@
+model:
+  backbone: ViT-B-32                # Options: ViT-B-32, ViT-B-16, ViT-L-14
+  pretrained: laion2b_s34b_b79k     # OpenCLIP pretrained tag
+  use_lora: false                   # LoRA adapters (via peft) for parameter-efficient
+  lora_rank: 8
+  freeze_text_encoder: false
+  freeze_image_encoder: false
+
+train:
+  lr: 5.0e-5
+  weight_decay: 0.01
+  batch_size: 128
+  epochs: 10
+  warmup_epochs: 1
+  grad_accum_steps: 1
+  mixed_precision: true
+  temperature: 0.07                 # InfoNCE initial temperature
+  seed: 42
+  device: auto
+
+retrieval:
+  top_k: 10
+  normalize: true                   # L2-normalize embeddings before FAISS IP
+  index_type: IndexFlatIP           # IndexFlatIP / IndexIVFFlat / IndexHNSWFlat
+
+onboarding:
+  auto_tag_confidence: 0.70
+  review_queue_confidence: 0.40
+  min_top1_margin: 0.15
+  forbidden_categories: []
